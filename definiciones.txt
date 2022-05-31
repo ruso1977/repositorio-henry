@@ -1,0 +1,14 @@
+variable: La utilizamos para almacenar un valor, este puede ser: cadena de texto, numerico, fecha, booleano.
+
+String: es un tipo de datos. se define como cadena de texto.
+
+Funciones: Las funciones son objetos invocables. 
+
+Argumento Return: este se utiliza para devolver un valor asignado.
+
+Declaracion If: Es un ciclo o control de flujo. Esta verifica si nuestra 
+funcion es verdadera o falsa. Si es verdadera, la funcion finaliza, sino 
+omite el codigo y devulve Falso.
+
+Valores Booleanos: Provienen de la logica de boole. Tienen dos Valores
+0 o 1, verdadero o falso
