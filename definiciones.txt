@@ -11,4 +11,4 @@ funcion es verdadera o falsa. Si es verdadera, la funcion finaliza, sino
 omite el codigo y devulve Falso.
 
 Valores Booleanos: Provienen de la logica de boole. Tienen dos Valores
-0 o 1, verdadero o falso
+0 o 1, verdadero o falso.
