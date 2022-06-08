@@ -1,0 +1,11 @@
+FOR: El bucle For esta compuesto por tres partes:
+1- una variable
+2- una expresion condicional
+3- la incrementacion de nuestra variable.
+este bucle se va a ejecutar hasta que la expresion condicional deje de cumplirse.
+
+&&: el operador logico "Y" o "AND", evalua ambas expresiones y devuelve verdadero si ambas lo son.
+
+||: el operador logico "O" o "OR", determina si una de las expresiones o ambas son verdaderas, y devolvera true.
+
+!: el operador logico "NO" o "NOT", devuelve el opuesto de la expresion pasada.
