@@ -1,0 +1,8 @@
+Arrays: Son objetos parecidos a una lista, la cual proporciona metodos para realizar operaciones de recorrido y mutacion.
+La longitud y el tipo de elementos es variabl. La longitud puede cambiar en cualquier momento, y los datos pueden ser
+almacenados en ubicaciones no continuas.
+Recordar que el primer elemento de un array, es el elemento 0.
+Ej.: si tenemos un array de 4 elementos, el primero es el nro 0 y el cuarto es el nro 3.
+
+     const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+                                     0         1        2        3
