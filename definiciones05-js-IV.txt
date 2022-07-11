@@ -1,0 +1,70 @@
+* OBJETOS:
+    Los Objetos son similares a las matrices, mientras que una matriz puede contener muchos elementos relacionados 
+    relacionados unos con otros, los objetos contienen mucha informacion sobre una sola cosa. Son una coleccion de
+    propiedades. Estas propiedades deben estar separadas por una coma (,).
+    Los objetos se instancian utilizando llaves ({}).
+    Ej.: const nuevoObjeto = {};
+
+
+* PROPIEDADES:
+    Una propiedad es una asociacion entre un nombre (o clave) y un valor. Son pares de clave y valor (key : value).
+    La clave es el identificador, y el valor es lo que queremos guardar en esa clave.
+    En los objetos podemos guardar muchos pares de clave : valor. 
+    Las claves son unicas dentro de un objeto, es decir que solo puede haber una con ese nombre.
+    Los valores se pueden repetir en distintas claves y pueden ser de cualquier tipo de dato:
+    (cadena, numero, matriz, booleano, funcion o incluso otro objeto).
+    Ej.:
+    const usuario = {
+        name: `Juan Perez`, // name(es la clave) y Juan Perez (es el valor).
+        edad: 30,   // edad (es la clave) y 30 (es el valor).
+        estudiante: true    // estudiante (es la clave) y true (es el valor).
+    };
+
+
+* METODOS:
+    Los metodos son las funciones guardadas en un objeto. Se puede establecer una clave para un nombre y el valor para
+    una funcion(metodo). Hemos venido utilizando varios metodos hasta ahora: .lenght, .push, .pop, etc. Estos son solo 
+    algunos.
+    A los metodos se lo puede llamar usando notacion de puntos con parentesis finales (tambien se 
+    puede llamar al metodo con argumentos como se realiza con una funcion normal).
+    Ej.: 
+    const nuevoObjeto = {
+        saludar: function () {  
+            console.log(`Hola a todos`);
+        }
+    }
+    nuevoObjeto.saludar();  // Devuelve: Hola a todos
+
+*BUCLE `FOR IN`:
+    El bucle for estandar no funciona para iterar un objeto, ya que los objetos no contienen indices numericos.
+    Para iterar un objeto utilizaremos el bucle "for in loop". Este comienza igual que el bucle estandar pero
+    entre parentesis declararemos una variable, la palabra clave IN y el nombre del objeto. Esto recorre cada
+    clave del objeto y finaliza cuando se hayan iterado todas las claves. 
+    Si utilizamos esa clave, y la notacion de corchetes en el bucle podremos acceder al valor asociado a esa clave.
+    Ej.:
+    const usuario = {
+        name: `Juan Perez`, // name(es la clave) y Juan Perez (es el valor).
+        edad: 30,   // edad (es la clave) y 30 (es el valor).
+        estudiante: true    // estudiante (es la clave) y true (es el valor).
+    };
+
+    for (let clave in usuario){     //declaro la variable (clave) y el nombre del objeto (usuario).
+        console.log(clave);
+        console.log(usuario[clave]);
+    }
+
+
+*NOTACION DE PUNTOS VS NOTACION DE CORCHETES:
+    En la notacion de corchetes, colocamos el nombre del objeto y seguido entre corchetes ([]), colocamos
+    la clave entre comillas o variable, a la que queramos llamar.
+    En la notacion de puntos es mas simple, ya que solo se coloca el objeto, un punto y el nombre de la 
+    clave.
+    La diferencia entre ambos, es que en la notacion de corchetes por lo general siempre se utilizan variables.
+    
+    Ej. notacion de puntos:
+        usuario.name;       // Juan Perez
+        usuario.estudiante  // true
+    
+    Ej. notacion de corchetes:
+        usuario[`name`];        //Juan Perez
+        usuario[`estudiante`];  //true
